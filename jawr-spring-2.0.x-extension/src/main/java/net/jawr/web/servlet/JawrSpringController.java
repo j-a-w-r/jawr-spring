@@ -19,11 +19,14 @@ import java.util.Map;
 import java.util.Properties;
 
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import net.jawr.web.JawrConstant;
+import net.jawr.web.context.ThreadLocalJawrContext;
 import net.jawr.web.resource.bundle.factory.util.PathNormalizer;
 import net.jawr.web.util.StringUtils;
 
@@ -41,7 +44,7 @@ import org.springframework.web.util.UrlPathHelper;
  * @author Jordi Hern�ndez Sell�s
  * @author Ibrahim Chaehoi
  */
-public class JawrSpringController implements Controller, ServletContextAware, InitializingBean {
+public class JawrSpringController implements Controller, ServletContextAware, InitializingBean, ServletContextListener {
 	
 	/** The logger */
 	private static final Logger LOGGER = Logger.getLogger(JawrSpringController.class);
@@ -202,5 +205,22 @@ public class JawrSpringController implements Controller, ServletContextAware, In
 		}else{
 			requestHandler = new JawrRequestHandler(context,initParams, configuration);
 		}
+	}
+
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet.ServletContextEvent)
+	 */
+	@Override
+	public void contextInitialized(ServletContextEvent sce) {
+	
+		
+	}
+
+	/* (non-Javadoc)
+	 * @see javax.servlet.ServletContextListener#contextDestroyed(javax.servlet.ServletContextEvent)
+	 */
+	@Override
+	public void contextDestroyed(ServletContextEvent sce) {
+		ThreadLocalJawrContext.reset();
 	}
 }
