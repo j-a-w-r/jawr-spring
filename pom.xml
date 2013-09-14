@@ -6,12 +6,12 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-	<artifactId>jawr-spring-2.0.x-parent</artifactId>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.jawr</groupId>
+	<artifactId>jawr-spring-2.0.x-parent</artifactId>
 	<version>3.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>jawr parent</name>
+	<name>jawr spring 2.0.x parent pom</name>
 	<url>http://jawr.java.net/</url>
 	<description>Javascript/CSS bundling and compressing tool for java web apps.
   	By using jawr resources are automatically bundled together and optionally minified and gzipped. 
@@ -51,6 +51,7 @@
 	</mailingLists>
 	<properties>
 		<jawr-core.version>3.5-SNAPSHOT</jawr-core.version>
+		<spring.version>2.0.8</spring.version>
 		<mockito.version>1.9.5</mockito.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.9</log4j.version>
@@ -148,15 +149,9 @@
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
-				<groupId>org.directwebremoting</groupId>
-				<artifactId>dwr</artifactId>
-				<version>2.0.2</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring</artifactId>
-				<version>2.0.8</version>
+				<version>${spring.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>

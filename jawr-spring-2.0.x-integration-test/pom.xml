@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.jawr</groupId>
-		<artifactId>jawr-spring-2.0.x-extension-parent</artifactId>
+		<artifactId>jawr-spring-2.0.x-parent</artifactId>
 		<version>3.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>jawr-spring-2.0.x-integration-test</artifactId>
@@ -12,18 +12,17 @@
 	<description>Basic web app for Jawr spring 2.0.x integration test</description>
 	<properties>
 		<jetty.version>6.1.10</jetty.version>
+		<jawr-integration-test-utils.version>${jawr-core.version}</jawr-integration-test-utils.version>
 		<webapp.name>jawr-spring-2.0.x-integration-test</webapp.name>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>net.jawr</groupId>
 			<artifactId>jawr-spring-2.0.x-extension</artifactId>
-			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
-			<version>2.0.8</version>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.servlet</groupId>
@@ -34,9 +33,6 @@
 		<dependency>
 			<groupId>com.carrotsearch</groupId>
 			<artifactId>smartsprites</artifactId>
-			<version>0.2.10</version>
-			<!-- TODO : replace by version 0.2.11 containing the feature to track 
-				sprite images when available -->
 			<exclusions>
 				<exclusion>
 					<groupId>com.google.collections</groupId>
@@ -44,7 +40,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
+		<dependency> <!-- Dependency used only to fix a classpath issue -->
 			<groupId>org.directwebremoting</groupId>
 			<artifactId>dwr</artifactId>
 			<version>2.0.2</version>
@@ -52,39 +48,28 @@
 		<dependency>
 			<groupId>com.google.javascript</groupId>
 			<artifactId>closure-compiler</artifactId>
-			<version>v20130823</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mozilla</groupId>
 			<artifactId>rhino</artifactId>
-			<version>1.7R4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.yahoo.platform.yui</groupId>
 			<artifactId>yuicompressor</artifactId>
-			<version>2.4.7</version>
-			<exclusions>
-				<exclusion>
-					<groupId>rhino</groupId>
-					<artifactId>js</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>net.jawr</groupId>
 			<artifactId>jawr-integration-test-utils</artifactId>
-			<version>3.5-SNAPSHOT</version>
+			<version>${jawr-integration-test-utils.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -120,7 +105,6 @@
 		<dependency>
 			<groupId>net.sourceforge.htmlunit</groupId>
 			<artifactId>htmlunit</artifactId>
-			<version>2.5</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -189,7 +173,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-
 		<finalName>${webapp.name}</finalName>
 	</build>
 </project>

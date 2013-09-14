@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.jawr</groupId>
-		<artifactId>jawr-spring-2.0.x-extension-parent</artifactId>
+		<artifactId>jawr-spring-2.0.x-parent</artifactId>
 		<version>3.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>jawr-spring-2.0.x-extension</artifactId>
@@ -43,17 +43,6 @@
 			<archive>https://java.net/projects/jawr/lists/dev/archive</archive>
 		</mailingList>
 	</mailingLists>
-	<properties>
-		<mockito.version>1.9.5</mockito.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.9</log4j.version>
-		<servlet-api.version>2.5</servlet-api.version>
-		<jawr.version>3.5-SNAPSHOT</jawr.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.compile.encoding>UTF-8</maven.compile.encoding>
-		<maven.test.compile.encoding>UTF-8</maven.test.compile.encoding>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>net.jawr</groupId>
@@ -63,32 +52,27 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
-			<version>2.0.8</version>
 		</dependency>
 		<!-- Test Dependencies -->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
-			<version>${mockito.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- Other Dependencies -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>${servlet-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
