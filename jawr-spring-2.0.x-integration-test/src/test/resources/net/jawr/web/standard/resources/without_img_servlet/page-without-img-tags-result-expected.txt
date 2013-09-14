@@ -2,9 +2,9 @@
 
 <html>
 <head>    
- <link rel="stylesheet" type="text/css" media="all" href="/jawr-spring-2.x-integration-test/spring/jawr/N762509788/fwk/core/component.css" >
+ <link rel="stylesheet" type="text/css" media="all" href="/jawr-spring-2.0.x-integration-test/spring/jawr/N762509788/fwk/core/component.css" >
 
- <script type="text/javascript" src="/jawr-spring-2.x-integration-test/spring/jawr/690372103.en_US/js/bundle/msg.js" ></script>
+ <script type="text/javascript" src="/jawr-spring-2.0.x-integration-test/spring/jawr/690372103.en_US/js/bundle/msg.js" ></script>
 
 </head>
 <body>
