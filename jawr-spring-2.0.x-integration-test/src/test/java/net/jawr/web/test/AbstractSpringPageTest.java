@@ -7,8 +7,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.net.URL;
-import java.util.Enumeration;
 
 import net.jawr.web.resource.bundle.factory.util.PathNormalizer;
 
@@ -25,15 +23,6 @@ public abstract class AbstractSpringPageTest extends AbstractPageTest {
 	 */
 	protected void initConfigFile(){
 		
-		try {
-			Enumeration<URL> urls = getClass().getClassLoader().getResources("META-INF/spring.schemas");
-			while(urls.hasMoreElements()){
-				System.out.println(urls.nextElement());
-			}
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
 		JawrSpringTestConfigFiles annotationConfig = (JawrSpringTestConfigFiles) getClass()
 				.getAnnotation(JawrSpringTestConfigFiles.class);
 		try{

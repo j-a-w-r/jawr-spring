@@ -1,6 +1,3 @@
-/**
- * 
- */
 package net.jawr.web.test;
 
 import static org.junit.Assert.assertEquals;
