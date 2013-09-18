@@ -9,17 +9,10 @@
   <artifactId>jawr-spring-2.0.x-webapp-sample</artifactId>
   <packaging>war</packaging>
   <name>springMVCSample Webapp</name>
+  <properties>
+  	<jawr-maven-plugin.version>1.5-SNAPSHOT</jawr-maven-plugin.version>
+  </properties>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-    	<groupId>log4j</groupId>
-    	<artifactId>log4j</artifactId>
-    	<scope>compile</scope>
-    </dependency>
     <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring</artifactId>
@@ -57,9 +50,9 @@
 				</configuration>
 		 </plugin>
 		 <plugin>
-	        <groupId>net.jawr</groupId>
+	        <groupId>net.jawr.tools</groupId>
 	        <artifactId>maven-jawr-plugin</artifactId>
-	        <version>1.2</version>
+	        <version>${jawr-maven-plugin.version}</version>
 	        <executions>
 	          <execution>
 	            <!-- Use this phase so that maven war includes our bundles -->
@@ -94,9 +87,9 @@
 	        </configuration>
 	  </plugin>
 	  <plugin>
-	        <groupId>net.jawr</groupId>
+	        <groupId>net.jawr.tools</groupId>
 	        <artifactId>maven-jawr-plugin</artifactId>
-	        <version>1.5-SNAPSHOT</version>
+	        <version>${jawr-maven-plugin.version}</version>
 	        <dependencies>
 	        <dependency>
 				<groupId>com.carrot2</groupId>
