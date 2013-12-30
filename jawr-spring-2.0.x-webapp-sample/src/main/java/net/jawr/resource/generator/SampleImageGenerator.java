@@ -7,7 +7,7 @@ import javax.servlet.ServletContext;
 import net.jawr.web.resource.bundle.generator.GeneratorContext;
 import net.jawr.web.resource.bundle.generator.ResourceGenerator;
 import net.jawr.web.resource.bundle.generator.StreamResourceGenerator;
-import net.jawr.web.resource.bundle.generator.resolver.PrefixedPathResourceGeneratorResolver;
+import net.jawr.web.resource.bundle.generator.resolver.PrefixedPathResolver;
 import net.jawr.web.resource.bundle.generator.resolver.ResourceGeneratorResolver;
 
 public class SampleImageGenerator implements StreamResourceGenerator {
@@ -26,7 +26,7 @@ public class SampleImageGenerator implements StreamResourceGenerator {
 	 */
 	@Override
 	public ResourceGeneratorResolver getResolver() {
-		return new PrefixedPathResourceGeneratorResolver("img");
+		return new PrefixedPathResolver("img");
 	}
 
 	@Override
