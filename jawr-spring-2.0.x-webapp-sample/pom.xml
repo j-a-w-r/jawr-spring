@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
 		<groupId>net.jawr.extensions</groupId>
 		<artifactId>jawr-spring-2.0.x-parent</artifactId>
-		<version>3.5-SNAPSHOT</version>
+		<version>3.5</version>
 	</parent>
   <artifactId>jawr-spring-2.0.x-webapp-sample</artifactId>
   <packaging>war</packaging>
@@ -52,7 +51,7 @@
 		 <plugin>
 	        <groupId>net.jawr.tools</groupId>
 	        <artifactId>maven-jawr-plugin</artifactId>
-	        <version>${jawr-maven-plugin.version}</version>
+	        <version>1.5</version>
 	        <executions>
 	          <execution>
 	            <!-- Use this phase so that maven war includes our bundles -->
@@ -89,7 +88,7 @@
 	  <plugin>
 	        <groupId>net.jawr.tools</groupId>
 	        <artifactId>maven-jawr-plugin</artifactId>
-	        <version>${jawr-maven-plugin.version}</version>
+	        <version>1.5</version>
 	        <dependencies>
 	        <dependency>
 				<groupId>com.carrot2</groupId>

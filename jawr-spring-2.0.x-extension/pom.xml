@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.jawr.extensions</groupId>
 		<artifactId>jawr-spring-2.0.x-parent</artifactId>
-		<version>3.5-SNAPSHOT</version>
+		<version>3.5</version>
 	</parent>
 	<artifactId>jawr-spring-2.0.x-extension</artifactId>
 	<name>jawr-spring-2.x-extension</name>
@@ -18,9 +17,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:svn:https://svn.java.net/svn/jawr~svn/extensions/spring-2.0.x/trunk</connection>
-		<developerConnection>scm:svn:https://svn.java.net/svn/jawr~svn/extensions/spring-2.0.x/trunk</developerConnection>
-		<url>https://java.net/projects/jawr/sources</url>
+		<connection>scm:svn:https://svn.java.net/svn/jawr~svn/extensions/spring-2.0.x/tags/jawr-spring-2.0.x-parent-3.5/trunk</connection>
+		<developerConnection>scm:svn:https://svn.java.net/svn/jawr~svn/extensions/spring-2.0.x/tags/jawr-spring-2.0.x-parent-3.5/trunk</developerConnection>
+		<url>scm:svn:https://svn.java.net/svn/jawr~svn/extensions/spring-2.0.x/tags/jawr-spring-2.0.x-parent-3.5/sources</url>
 	</scm>
 	<developers>
 		<developer>

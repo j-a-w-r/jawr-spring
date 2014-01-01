@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.jawr.extensions</groupId>
 		<artifactId>jawr-spring-2.0.x-parent</artifactId>
-		<version>3.5-SNAPSHOT</version>
+		<version>3.5</version>
 	</parent>
 	<artifactId>jawr-spring-2.0.x-integration-test</artifactId>
 	<packaging>war</packaging>
@@ -64,7 +63,7 @@
 		<dependency>
 			<groupId>net.jawr</groupId>
 			<artifactId>jawr-integration-test-utils</artifactId>
-			<version>${jawr-integration-test-utils.version}</version>
+			<version>3.5</version>
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
