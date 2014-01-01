@@ -65,6 +65,7 @@
 			<groupId>net.jawr</groupId>
 			<artifactId>jawr-integration-test-utils</artifactId>
 			<version>${jawr-integration-test-utils.version}</version>
+			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
