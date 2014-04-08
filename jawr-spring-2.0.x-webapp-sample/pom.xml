@@ -60,7 +60,7 @@
 	        </executions>
 	        <dependencies>
 	        	<dependency>
-					<groupId>com.carrot2</groupId>
+					<groupId>com.carrotsearch</groupId>
 					<artifactId>smartsprites</artifactId>
 					<version>${smartsprites.version}</version>
 				</dependency>
@@ -88,10 +88,10 @@
 	  <plugin>
 	        <groupId>net.jawr.tools</groupId>
 	        <artifactId>maven-jawr-plugin</artifactId>
-	        <version>1.5</version>
+	        <version>${jawr-maven-plugin.version}</version>
 	        <dependencies>
 	        <dependency>
-				<groupId>com.carrot2</groupId>
+				<groupId>com.carrotsearch</groupId>
 				<artifactId>smartsprites</artifactId>
 				<version>${smartsprites.version}</version>
 			</dependency>
