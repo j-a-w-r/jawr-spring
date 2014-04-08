@@ -3,13 +3,13 @@
   <parent>
 		<groupId>net.jawr.extensions</groupId>
 		<artifactId>jawr-spring-2.0.x-parent</artifactId>
-		<version>3.6-SNAPSHOT</version>
+		<version>3.5.1-SNAPSHOT</version>
 	</parent>
   <artifactId>jawr-spring-2.0.x-webapp-sample</artifactId>
   <packaging>war</packaging>
   <name>springMVCSample Webapp</name>
   <properties>
-  	<jawr-maven-plugin.version>1.5-SNAPSHOT</jawr-maven-plugin.version>
+  	<jawr-maven-plugin.version>1.5</jawr-maven-plugin.version>
   </properties>
   <dependencies>
     <dependency>
