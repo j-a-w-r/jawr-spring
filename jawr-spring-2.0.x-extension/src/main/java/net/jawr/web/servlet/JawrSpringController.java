@@ -1,5 +1,5 @@
 /**
- * Copyright 2013 Jordi Hernández Sellés, Ibrahim Chaehoi 
+ * Copyright 2013-2014 Jordi Hernández Sellés, Ibrahim Chaehoi 
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of the License at
@@ -238,8 +238,8 @@ public class JawrSpringController implements Controller, ServletContextAware,
 		if (LOGGER.isDebugEnabled())
 			LOGGER.debug("Initializing Jawr Controller's JawrRequestHandler");
 
-		if (JawrConstant.IMG_TYPE.equals(type)) {
-			requestHandler = new JawrImageRequestHandler(context, initParams,
+		if (JawrConstant.IMG_TYPE.equals(type) || JawrConstant.BINARY_TYPE.equals(type)) {
+			requestHandler = new JawrBinaryResourceRequestHandler(context, initParams,
 					configuration);
 		} else {
 			requestHandler = new JawrRequestHandler(context, initParams,
