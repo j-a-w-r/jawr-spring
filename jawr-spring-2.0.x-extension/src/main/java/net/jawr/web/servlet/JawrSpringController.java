@@ -238,7 +238,7 @@ public class JawrSpringController implements Controller, ServletContextAware,
 		if (LOGGER.isDebugEnabled())
 			LOGGER.debug("Initializing Jawr Controller's JawrRequestHandler");
 
-		if (JawrConstant.IMG_TYPE.equals(type) || JawrConstant.BINARY_TYPE.equals(type)) {
+		if (JawrConstant.BINARY_TYPE.equals(type)) {
 			requestHandler = new JawrBinaryResourceRequestHandler(context, initParams,
 					configuration);
 		} else {
