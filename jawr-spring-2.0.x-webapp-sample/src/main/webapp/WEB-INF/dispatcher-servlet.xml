@@ -29,8 +29,8 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
       <bean id="jawrJsController" parent="jawrBase" />
       
       <!-- Image controller -->
-      <bean id="jawrImgController" parent="jawrBase" >
-      	<property name="type" value="img" />
+      <bean id="jawrBinaryController" parent="jawrBase" >
+      	<property name="type" value="binary" />
       </bean>
       
       <!-- CSS controller -->
@@ -60,11 +60,16 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 		</property>
 		 <property name="mappings">
 		  <props>
-		  <prop key="index.htm">index</prop>
-		  <prop key="/jawr/**/*.js">jawrJsController</prop>
-		  <prop key="/jawr/**/*.css">jawrCSSController</prop>
-		  <prop key="/jawr/**/*.png">jawrImgController</prop>
-		  <prop key="/jawr/**/*.gif">jawrImgController</prop>
+			  <prop key="index.htm">index</prop>
+			  <prop key="/jawr/**/*.js">jawrJsController</prop>
+			  <prop key="/jawr/**/*.css">jawrCSSController</prop>
+			  <prop key="/jawr/**/*.png">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.gif">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.jpeg">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.jpg">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.woff">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.eot">jawrBinaryController</prop>
+			  <prop key="/jawr/**/*.ttf">jawrBinaryController</prop>
 		  </props>
 		 </property>
 	</bean>
