@@ -1,4 +1,4 @@
-jawr-spring-2.0.x
+jawr-spring
 =================
 
-Jawr Spring 2.0.x Official Repository
+Jawr Spring Web MVC Official Repository

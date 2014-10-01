@@ -7,10 +7,10 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.jawr.extensions</groupId>
-	<artifactId>jawr-spring-2.0.x-parent</artifactId>
+	<artifactId>jawr-spring-parent</artifactId>
 	<version>3.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>jawr spring 2.0.x parent pom</name>
+	<name>jawr spring parent pom</name>
 	<url>http://jawr.java.net/</url>
 	<description>Javascript/CSS bundling and compressing tool for java web apps.
   	By using jawr resources are automatically bundled together and optionally minified and gzipped. 
@@ -23,9 +23,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git@github.com:ic3fox/jawr-spring-2.0.x.git</connection>
-		<developerConnection>scm:git:git@github.com:ic3fox/jawr-spring-2.0.x.git</developerConnection>
-		<url>http://github.com/ic3fox/jawr-spring-2.0.x</url>
+		<connection>scm:git:git@github.com:ic3fox/jawr-spring.git</connection>
+		<developerConnection>scm:git:git@github.com:ic3fox/jawr-spring.git</developerConnection>
+		<url>http://github.com/ic3fox/jawr-spring</url>
 		<tag>HEAD</tag>
 	</scm>
 	<developers>
@@ -84,12 +84,12 @@
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>jawr-spring-2.0.x-extension</artifactId>
+				<artifactId>jawr-spring-extension</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>jawr-spring-2.0.x-integration-test</artifactId>
+				<artifactId>jawr-spring-integration-test</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- Test Dependencies -->
@@ -362,7 +362,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
-				<module>jawr-spring-2.0.x-extension</module>
+				<module>jawr-spring-extension</module>
 			</modules>
 		</profile>
 		<profile>
@@ -371,9 +371,9 @@
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<modules>
-				<module>jawr-spring-2.0.x-extension</module>
-				<module>jawr-spring-2.0.x-integration-test</module>
-				<module>jawr-spring-2.0.x-webapp-sample</module>
+				<module>jawr-spring-extension</module>
+				<module>jawr-spring-integration-test</module>
+				<module>jawr-spring-webapp-sample</module>
 			</modules>
 		</profile>
 	</profiles>
