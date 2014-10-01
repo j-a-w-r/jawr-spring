@@ -30,7 +30,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
       
       <!-- Image controller -->
       <bean id="jawrImgController" parent="jawrBase" >
-      	<property name="type" value="img" />
+      	<property name="type" value="binary" />
       </bean>
       
       <!-- CSS controller -->
