@@ -8,7 +8,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.jawr.extensions</groupId>
 	<artifactId>jawr-spring-parent</artifactId>
-	<version>3.6</version>
+	<version>3.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>jawr spring parent pom</name>
 	<url>http://jawr.java.net/</url>
@@ -26,7 +26,7 @@
 		<connection>scm:git:git@github.com:ic3fox/jawr-spring.git</connection>
 		<developerConnection>scm:git:git@github.com:ic3fox/jawr-spring.git</developerConnection>
 		<url>http://github.com/ic3fox/jawr-spring</url>
-		<tag>jawr-spring-parent-3.6</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<developers>
 		<developer>
@@ -80,7 +80,7 @@
 			<dependency>
 				<groupId>net.jawr</groupId>
 				<artifactId>jawr-core</artifactId>
-				<version>3.6</version>
+				<version>3.7-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
