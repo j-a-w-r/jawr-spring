@@ -374,7 +374,11 @@
 				<module>jawr-spring-extension</module>
 				<module>jawr-spring-integration-test</module>
 				<module>jawr-spring-webapp-sample</module>
+				<module>jawr-spring-boot-sample</module>
 			</modules>
 		</profile>
 	</profiles>
+	<modules>
+		<module>jawr-spring-boot</module>
+	</modules>
 </project>
